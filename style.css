@@ -1,0 +1,93 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat&display=swap");
+
+body {
+	font-family: "Montserrat", sans-serif;
+	margin: 0;
+    padding: 0;
+}
+
+a, a:hover{
+    text-decoration: none;
+}
+
+.title{
+    font-size: 24px;
+    margin: 0;
+    margin-top: 100px;
+    margin-left: 70px;
+}
+
+.card_container{
+    display: flex;
+    justify-content: center;
+    flex-wrap:wrap;
+    padding: 0 4%;
+}
+
+.card{
+    width: 15%;
+    margin: 30px 10px;
+    box-shadow: 0 2px 10px rgb(0 0 0 / 30%);
+    -webkit-transition: all 500ms linear;
+-moz-transition: all 500ms linear;
+-ms-transition: all 500ms linear;
+-o-transition: all 500ms linear;
+transition: all 500ms linear;
+}
+
+.card:hover{
+    box-shadow: 0 2px 10px rgb(0 0 0 / 70%);
+}
+
+.card img{
+    width:100%
+}
+
+.cardDesc{
+    padding-left: 10px;
+    margin: 10px auto;
+}
+
+.card-title{
+    text-align: left;
+    font-size: 16px;
+    font-weight: 400;
+    letter-spacing: 0.5px;
+    color: rgb(27, 25, 25);
+    margin:0
+}
+
+.brandname{
+    margin:0;
+    margin-top: 10px;
+    text-align: left;
+    font-size: 12px;
+    color: rgb(110, 110, 110);
+}
+
+.price{
+    margin:0;
+    margin-top: 10px;
+    text-align: left;
+    font-size: 15px;
+    letter-spacing: 2px;
+    color: #009688;
+}
+
+@media (min-width:901px) and (max-width: 1200px) {
+	.card {
+	    width:33.33%
+	}
+}
+
+@media (min-width:568px) and (max-width: 900px) {
+	.card {
+	    width:46%
+	}
+}
+
+@media screen and (max-width: 567px) {
+	.card {
+        width:100%
+	}
+}
